@@ -1,0 +1,1 @@
+## Very anonymous inner class cannot be replaced with lambda Exp
