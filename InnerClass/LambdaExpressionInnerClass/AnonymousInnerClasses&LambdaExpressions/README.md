@@ -1,3 +1,7 @@
+## REMEMBER:
+
+        Anonymous Inner Class != Lambda Expression
+
 ## Every anonymous innerclass cannot be replaced with lambda Exp
 Check `../Basic/Case1/Main.java` or check below code.
 
