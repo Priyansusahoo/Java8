@@ -1,3 +1,6 @@
+# Why Lambda Exp ?
+# Use case e.g - Procedure as an argument in the constructor using lambda Expression.
+
 ## Only applicable modifiers for Outer Classes are:
             - public
             - default
@@ -104,3 +107,16 @@ interface Infra{
     - Concise Code
     - reduce Complexity
     - functional style
+
+# Indepth Advantages:
+
+    - We can enable functional programming in java
+    - we can reduce length of the code so that readability will be improved.
+    - we can resolve complexity fo Anonymous Inner classes until some extend.
+    - we can handle procedures / functions just like values.
+    - we can pass procedures / functions as arguments.
+    - Easier to use updated APIs and Libraries.
+    - Enable support for parallel processing.
+
+
+
