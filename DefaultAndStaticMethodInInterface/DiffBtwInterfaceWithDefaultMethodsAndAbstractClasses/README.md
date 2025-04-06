@@ -47,5 +47,12 @@ interface Right {
 | Inside interface every variable is always public, static and final we can not decalre inatance variables. | Inside Abstract class we can decalre instance variables, which are required to the child class. |
 | Interface never talks about state of object. | Abstract class can talk about state of object. |
 | Inside Interface we can't declare constructors. | Inside abstract class, we can decalre constructor. |
-| Inside Interface we can't declare instance and static blocks. | Inside abstract class, we can decalre instance & static blocks. |
-| 
+| Inside Interface we can't declare instance and static blocks. | Inside abstract class, we can declare instance & static blocks. |
+| Functional Interface with default methods can refer Lambda Expressions. | Abstract class can't refer Lambda Expression. |
+| Inside Interface we can't override `Object` class methods e.g: `toString()`, `hashCode()`, `equals()`. | Inside Abstract class we can override `Object` class methods. |
+
+
+
+## NOTE - 
+
+        Interface with default methods != Abstract Classes
