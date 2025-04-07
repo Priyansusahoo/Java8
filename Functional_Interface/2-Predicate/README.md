@@ -1,0 +1,6 @@
+# Predicate Functional Interface
+
+
+
+
+
