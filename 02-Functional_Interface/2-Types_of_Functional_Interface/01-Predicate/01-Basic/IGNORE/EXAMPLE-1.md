@@ -1,25 +1,4 @@
-# Predicate Functional Interface
-
-##### [First Go through the Introduction](../00-Intro/README.md)
-
-1. Introduced in Java `1.8` .
-
-2. Present in `java.util.function` -> `java.util.function.Predicate`.
-
-3. returns a `boolean` based on a condition.
-
-4. We can use `Predicate` to refer Lambda Expressions.
-
-5. Contains `boolean test(T t)` abstract method.
-
-    ```java
-    interface Predicate<T> {
-        boolean test(T t);
-    }
-    ```
-
-
-### Example 1 -
+## Example 1
 
 To check if a number is greater than `10` or not.
 
