@@ -4,10 +4,10 @@
 import java.util.function.Predicate;
 class Main {
     public static void main(String[] args) {
-        String[] elements = {"Priyansu", "Kamui", "kakashi", "KanekiKen", "Luffy"};
+        String[] elements = {"Priyansu", "Kamui", "kakashi", "KanekiKen", null, "", "Luffy"};
         
         
-        Predicate<String> startsWithK = S -> String.valueOf(S.charAt(0)).equalsIgnoreCase("k");
+        Predicate<String> startsWithK = S -> S !=null && S.length() > 0 && String.valueOf(S.charAt(0)).equalsIgnoreCase("k");
         
         System.out.println("Strings starting with `K`: ");
         m1(startsWithK, elements);

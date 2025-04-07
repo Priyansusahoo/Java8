@@ -70,3 +70,5 @@ class Test {
 #### [Example-1 - Program to display names starts with '`K`' by using `Predicate`](./IGNORE/EXAMPLE-1.md)
 
 #### [Example-2 - To remove null values and Empty string from the given list](./IGNORE/EXAMPLE-2.md)
+
+#### [Example-3 - Program for User Authentication by using Predicate](./IGNORE/EXAMPLE-3.md)
