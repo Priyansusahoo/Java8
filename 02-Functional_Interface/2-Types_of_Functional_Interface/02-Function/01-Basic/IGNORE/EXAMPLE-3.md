@@ -20,3 +20,17 @@ class Main {
     }
 }
 ```
+
+## Concise Code :
+
+```java
+import java.util.function.Function;
+
+class Main {
+    public static void main(String[] args) {
+        Function<String, String> f = S -> S.replaceAll(" ", "");
+        
+        System.out.println(f.apply("Priyansu Sahoo"));
+    }
+}
+```
