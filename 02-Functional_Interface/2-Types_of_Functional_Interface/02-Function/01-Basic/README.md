@@ -12,41 +12,8 @@ interface Function<T, R> {
 }
 ```
 
-
-
-
-
-
-## Example - 1 : Return length of a given String.
-```java
-import java.util.function.Function;
-
-class Main {
-    public static void main(String[] args) {
-        Function<String, Integer> f = S -> S.length();
-        
-        System.out.println(f.apply("Sahoo"));
-    }
-}
-```
-
-
-
-
-
-## Example - 2 : Square of a number
-```java
-import java.util.function.Function;
-
-class Main {
-    public static void main(String[] args) {
-        Function<Double, Double> f = I -> Math.pow(I, 2);
-        
-        System.out.println(f.apply(5.0));
-    }
-}
-```
-
+## [Example - 1 : Return length of a given String](./IGNORE/EXAMPLE-1.md)
+## [Example - 2 : Square of a number](./IGNORE/EXAMPLE-2.md)
 
 
 # Difference between `Predicate` and `Function` functional Interface
@@ -58,3 +25,6 @@ class Main {
 | Predicate Interface defines one abstract method called `test()` | Function Interface defines one abstract method called `apply()` |
 | `public boolean test(T t)` | `public R apply(T t)` |
 | Predicate can return only boolean value | Function can return any type of value |
+
+
+## [Example - 3 : Program to remove spaces present in the given String by using `Function` functional interface](./IGNORE/EXAMPLE-3.md)
