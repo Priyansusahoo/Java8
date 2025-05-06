@@ -80,7 +80,7 @@ class Test {
 
 `isEqual()` is a static method present in Predicate functional interface.
 
-Example : 
+Example `Basic` : 
 ```java
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -93,5 +93,58 @@ class Main {
       System.out.println(P.test("Priyansu")); // false
       System.out.println(P.test("priyansu")); // true
     }
+}
+```
+
+Example `InDepth` :
+
+```java
+import java.util.function.Predicate;
+import java.util.Objects;
+
+class Main {
+    public static void main(String[] args) {
+      
+      Predicate<Employee> P = Predicate.isEqual(new Employee("priyansu", 100000)); // Predicate
+      
+      Employee e1 = new Employee("priyansu", 100000);
+      Employee e2 = new Employee("ujjawal", 100000);
+      
+      System.out.println(P.test(e1)); // false
+      System.out.println(P.test(e2)); // true
+    }
+}
+
+class Employee {
+  public String name;
+  public Integer salary;
+  
+  public Employee(String name, Integer salary) {
+    this.name = name;
+    this.salary = salary;
+  }
+  
+  // we need to override equals() as isEqual() in Predicate is using equals() internally & By default it checks memory address which is wrong for our implementation, so we override as to check the content in obj.
+  @Override
+  public boolean equals(Object obj) { 
+    Employee e = (Employee) obj;
+    
+    if (name.equals(e.name) && salary.equals(e.salary)) return true;
+    else return false;
+  }
+  
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, salary);
+  }
+}
+```
+`isEqual()` in Predicate Interface
+
+```java
+public static <T> Predicate<T> isEqual(Object targetRef) {
+    return (null == targetRef) ? 
+        (t -> t == null) : 
+        (t -> targetRef.equals(t)); // Uses equals(), so we need to override as per our requirement
 }
 ```
