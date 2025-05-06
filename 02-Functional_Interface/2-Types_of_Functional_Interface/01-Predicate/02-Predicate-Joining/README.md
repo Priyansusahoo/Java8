@@ -74,3 +74,24 @@ class Test {
 #### [Example-3 - Program for User Authentication by using Predicate](./IGNORE/EXAMPLE-3.md)
 
 #### [Example-4 - Program to Check Whether User is allowed into Pub or not? by using Predicate](./IGNORE/EXAMPLE-4.md)
+
+
+# Predicate interface `isEqual()` method:
+
+`isEqual()` is a static method present in Predicate functional interface.
+
+Example : 
+```java
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+class Main {
+    public static void main(String[] args) {
+      
+      Predicate<String> P = Predicate.isEqual("priyansu");
+      
+      System.out.println(P.test("Priyansu")); // false
+      System.out.println(P.test("priyansu")); // true
+    }
+}
+```
