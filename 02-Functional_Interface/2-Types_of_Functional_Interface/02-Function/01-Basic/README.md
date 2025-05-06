@@ -30,3 +30,5 @@ interface Function<T, R> {
 ## [Example - 3 : Program to remove spaces present in the given String by using `Function` functional interface](./IGNORE/EXAMPLE-3.md)
 
 ## [Example - 4 : Program to count number of spaces present in the given String by using `Function` functional interface](./IGNORE/EXAMPLE-4.md)
+
+## [Example - 5 : Using Predicate and Function to grade marks which are greater than 60](./IGNORE/EXAMPLE-5.md)
